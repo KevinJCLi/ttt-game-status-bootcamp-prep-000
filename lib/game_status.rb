@@ -27,7 +27,7 @@ def won? (board)
   
   
 def full?(board)
-  
+  board.select do 
 
 
 
