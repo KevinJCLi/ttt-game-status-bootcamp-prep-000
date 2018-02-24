@@ -17,11 +17,17 @@ WIN_COMBINATIONS = [
 ]
 
 def won? (board)
+  WIN_COMBINATIONS.each do |win_match?|
+    win_match == 
+  
   for i in 0..1 
     board.select do |tic_or_tac| 
       if tic_or_tac == "X" || tic_or_tac == "x"
   
-      
+  
+  
+def full?(board)
+  
 
 
 
