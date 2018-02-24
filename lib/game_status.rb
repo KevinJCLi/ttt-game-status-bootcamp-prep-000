@@ -19,6 +19,7 @@ WIN_COMBINATIONS = [
 def won? (board)
   board.select do |tic_or_tac| 
     if tic_or_tac == "X" || tic_or_tac == "x"
+  
       
 
 
