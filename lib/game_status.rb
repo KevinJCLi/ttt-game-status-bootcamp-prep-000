@@ -27,7 +27,10 @@ def won? (board)
   
   
 def full?(board)
-  board.select do 
+  board.select do |position|
+    position_taken?(board, position)
+  end
+end
 
 
 
