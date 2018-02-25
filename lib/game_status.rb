@@ -33,9 +33,7 @@ end
   
   
 def full?(board)
-  board.select do |position|
-    position_taken?(board, position)
-  end
+  board.all? do 
 end
 
 
