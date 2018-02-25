@@ -22,7 +22,10 @@ def win?(board)
 		combination.each do |position|
 			combination_array << board[position]
 		end
-		combination_array == ["X", "X", "X"] || combination_array == ["O", "O", "O"] ? combination array : false
+		if combination_array == ["X", "X", "X"] || combination_array == ["O", "O", "O"]
+			combination_array
+		else
+			false
 		end
 	end
 end
