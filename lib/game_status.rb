@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   [2, 4, 6],
 ]
 
-def win?(board)
+def won?(board)
 	WIN_COMBINATIONS.each do |combination|
 		combination_array = []
 		combination.each do |position|
@@ -34,15 +34,15 @@ def full?(board)
 end
 
 def draw?(board)
-	!win?(board) && full?(board)
+	!won?(board) && full?(board)
 end
 
 def over?(board)
-	win?(board) || draw?(board)
+	won?(board) || draw?(board)
 end
 
 def winner(board)
-	win?(board) ? board[win?(board)[0]] : nil
+	won?(board) ? board[won?(board)[0]] : nil
 end
 
 
