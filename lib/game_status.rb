@@ -33,7 +33,7 @@ end
   
   
 def full?(board)
-  board.all? do 
+  board.all? do |position|
 end
 
 
