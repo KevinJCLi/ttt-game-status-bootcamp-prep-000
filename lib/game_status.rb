@@ -23,11 +23,10 @@ def win?(board)
 			combination_array << board[position]
 		end
 		if combination_array == ["X", "X", "X"] || combination_array == ["O", "O", "O"]
-			combination_array
-		else
-			false
+			return combination
 		end
 	end
+	return false
 end
   
 def full?(board)
