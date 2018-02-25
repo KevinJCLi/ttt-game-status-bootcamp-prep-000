@@ -34,5 +34,7 @@ def full?(board)
   board.all?{|position| position == "X" || position == "O"}
 end
 
-
+def draw?(board)
+  if win? 
+    (full?(board)) ? true : false
 
